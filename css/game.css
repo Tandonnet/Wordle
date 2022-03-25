@@ -1,0 +1,27 @@
+.parent{
+	position: relative;
+	display: inline;
+	height: 75%;
+	margin-top: auto;
+	margin-bottom: auto;
+	top: 20%;
+}
+
+.gamerow {
+	width: calc(70px*5);
+	margin: auto;
+}
+
+.cases {
+	flex: 1 0 10%;
+	height: var(--cases-width);
+	width: var(--cases-width);
+	font-size: calc(var(--cases-width) * 0.55);
+	background-color: rgb(30,30,30);
+	border-width: 5px;
+	border-color: rgb(55,55,55);
+	border-style: solid;
+	color: white;
+	margin: 5px 5px;
+	border-radius: 15%;
+}

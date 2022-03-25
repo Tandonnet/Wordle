@@ -1,0 +1,56 @@
+@media(max-height: 900px){
+	.cases{
+		--cases-width: 62px;
+	}
+}
+
+@media(max-height: 820px){
+	.cases{
+		--cases-width: 53px;
+	}
+}
+
+@media(max-height: 740px){
+	h1{
+		font-size: 30px;
+	}
+	.cases{
+		--cases-width: 45px;
+	}
+}
+
+@media(max-height: 690px){
+	.cases{
+		--cases-width: 36px;
+	}
+}
+
+@media(max-height: 500px){
+	.cases{
+		--cases-width: 30px;
+	}
+}
+
+@media(max-width: 1600px){
+	:root{
+		--keyboard-percentage: 40%;
+	}
+}
+
+@media(max-width: 1200px){
+	:root{
+		--keyboard-percentage: 60%;
+	}
+}
+
+@media(max-width: 800px){
+	:root{
+		--keyboard-percentage: 70%;
+	}
+}
+
+@media(max-width: 600px){
+	:root{
+		--keyboard-percentage: 80%;
+	}
+}

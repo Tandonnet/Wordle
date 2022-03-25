@@ -1,0 +1,25 @@
+@import url("responsive.css");
+@import url("game.css");
+@import url("keyboard.css");
+
+:root {
+	--cases-width : 65px;
+	--keyboard-percentage : 30%;
+}
+
+div {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: auto;
+}
+
+h1 {
+	font-size: 50px;
+	text-align: center;
+	color: white;
+}
+
+body {
+	background-color: rgba(0, 0, 0, 0.9);
+}

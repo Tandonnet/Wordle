@@ -1,0 +1,40 @@
+.keyboard-line {
+	position: relative;
+	width : 100%;
+	right: 0px;
+	justify-content: center;
+	align-items: center;
+	margin-right: 0px;
+	border: 0;
+
+}
+
+.keyboard {
+	position: absolute;
+	display : flex;
+	width : var(--keyboard-percentage);
+	align-items: center;
+	justify-content: center;
+	left: calc((100% - var(--keyboard-percentage)) / 2);
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-top: 10px;
+	bottom: 5%;
+}
+
+.key {
+	width: 10%;
+	height : 5%;
+	padding: 10px;
+	background-color: rgb(30,30,30);
+	color: white;
+	font-size: calc(var(--cases-width) * 0.5);
+	border-color: rgb(55,55,55);
+	border-radius: 10%;
+}
+
+.big-key {
+	height: 5%;
+	width : 20%;
+}
+

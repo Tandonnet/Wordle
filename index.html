@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="Morpion" content="Jouer au Wordle en ligne">
+	<title>Wordle</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="javascript.js"></script>
+	<script src="mots.js"></script>
+</head>
+	
+	<body>
+		<h1>Wordle</h1>
+		<div class="parent">
+			<div class="gamerow">
+				<button class="cases" id="11"> </button>
+				<button class="cases" id="12"> </button>
+				<button class="cases" id="13"> </button>
+				<button class="cases" id="14"> </button>
+				<button class="cases" id="15"> </button>
+			</div>
+			<div class="gamerow">
+				<button class="cases" id="21"> </button>
+				<button class="cases" id="22"> </button>
+				<button class="cases" id="23"> </button>
+				<button class="cases" id="24"> </button>
+				<button class="cases" id="25"> </button>
+			</div>
+			<div class="gamerow">
+				<button class="cases" id="31"> </button>
+				<button class="cases" id="32"> </button>
+				<button class="cases" id="33"> </button>
+				<button class="cases" id="34"> </button>
+				<button class="cases" id="35"> </button>
+			</div>
+			<div class="gamerow">
+				<button class="cases" id="41"> </button>
+				<button class="cases" id="42"> </button>
+				<button class="cases" id="43"> </button>
+				<button class="cases" id="44"> </button>
+				<button class="cases" id="45"> </button>
+			</div>
+			<div class="gamerow">
+				<button class="cases" id="51"> </button>
+				<button class="cases" id="52"> </button>
+				<button class="cases" id="53"> </button>
+				<button class="cases" id="54"> </button>
+				<button class="cases" id="55"> </button>
+			</div>
+			<div class="gamerow">
+				<button class="cases" id="61"> </button>
+				<button class="cases" id="62"> </button>
+				<button class="cases" id="63"> </button>
+				<button class="cases" id="64"> </button>
+				<button class="cases" id="65"> </button>
+			</div>
+		</div>
+		<div class="keyboard">
+			<div class="keyboard-line" id="line-1">
+				<button onclick="enterLetter('A')" class="key">A</button>
+				<button onclick="enterLetter('Z')" class="key">Z</button>
+				<button onclick="enterLetter('E')" class="key">E</button>
+				<button onclick="enterLetter('R')" class="key">R</button>
+				<button onclick="enterLetter('T')" class="key">T</button>
+				<button onclick="enterLetter('Y')" class="key">Y</button>
+				<button onclick="enterLetter('U')" class="key">U</button>
+				<button onclick="enterLetter('I')" class="key">I</button>
+				<button onclick="enterLetter('O')" class="key">O</button>
+				<button onclick="enterLetter('P')" class="key">P</button>
+			</div>
+			<div class="keyboard-line" id="line-2">
+				<button onclick="enterLetter('Q')" class="key">Q</button>
+				<button onclick="enterLetter('S')" class="key">S</button>
+				<button onclick="enterLetter('D')" class="key">D</button>
+				<button onclick="enterLetter('F')" class="key">F</button>
+				<button onclick="enterLetter('G')" class="key">G</button>
+				<button onclick="enterLetter('H')" class="key">H</button>
+				<button onclick="enterLetter('J')" class="key">J</button>
+				<button onclick="enterLetter('K')" class="key">K</button>
+				<button onclick="enterLetter('L')" class="key">L</button>
+				<button onclick="enterLetter('M')" class="key">M</button>
+			</div>
+			<div class="keyboard-line" id="line-3">
+				<button onclick="enterKey()" class="key big-key">↵</button>
+				<button onclick="enterLetter('W')" class="key">W</button>
+				<button onclick="enterLetter('X')" class="key">X</button>
+				<button onclick="enterLetter('C')" class="key">C</button>
+				<button onclick="enterLetter('V')" class="key">V</button>
+				<button onclick="enterLetter('B')" class="key">B</button>
+				<button onclick="enterLetter('N')" class="key">N</button>
+				<button onclick="removeLetter()" class="key big-key" id="remove-key">⌫</button>
+			</div>
+		</div>
+	</body>
+</html>
