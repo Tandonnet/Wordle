@@ -90,10 +90,13 @@ async function checkWord() {
 		for(var i = 0; i < 5; i++){
 			if (score[i] == 2) {
 				document.getElementById((1+i+tens*10).toString()).style.backgroundColor = "rgb(0, 176, 100)"; //Put green color
+				document.getElementById(wordGuess[i]).style.backgroundColor = "rgb(0, 176, 100)";
 			} else if(score[i] == 1){
 				document.getElementById((1+i+tens*10).toString()).style.backgroundColor = "rgb(232, 217, 0)"; //Put yellow color
+				document.getElementById(wordGuess[i]).style.backgroundColor = "rgb(232, 217, 0)";
 			} else {
 				document.getElementById((1+i+tens*10).toString()).style.backgroundColor = "rgb(143, 143, 139)"; // Put grey color
+				document.getElementById(wordGuess[i]).style.backgroundColor = "rgb(143, 143, 139)";
 			}
 			await delay(0.3);
 		}
