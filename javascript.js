@@ -107,7 +107,7 @@ async function checkWord() {
 		}
 		reloading(reload);
 	} else {
-		alert(`Ce mot n'est pas dans notre dictionnaire.`);
+		notInDico();
 		nextCase -= 5;
 	}
 }
@@ -135,6 +135,20 @@ function enterKey() {
 	checkWord();
 	nextCase += 5;
 	endLine = false;
+}
+
+async function notInDico() {
+	document.getElementById('dico-error').style.display = "block";
+	for (var i = 0; i < 102; i = i+2) {
+		document.getElementById('dico-error').style.opacity = `${i}%`;
+		await delay(0.01);
+	}
+	await delay(1.5);
+	for (var i = 100; i > -2; i = i-2) {
+		document.getElementById('dico-error').style.opacity = `${i}%`;
+		await delay(0.01);
+	}
+	document.getElementById('dico-error').style.display = "none";
 }
 
 function reloading(reload) {
