@@ -8,6 +8,9 @@
 	.cases{
 		--cases-width: 53px;
 	}
+	.keyboard{
+		--keyboard-percentage: 90vw;
+	}
 }
 
 @media(max-height: 740px){
@@ -32,25 +35,25 @@
 }
 
 @media(max-width: 1600px){
-	:root{
-		--keyboard-percentage: 40%;
+	.keyboard{
+		--keyboard-percentage: 50%;
 	}
 }
 
 @media(max-width: 1200px){
-	:root{
-		--keyboard-percentage: 60%;
-	}
-}
-
-@media(max-width: 800px){
-	:root{
+	.keyboard{
 		--keyboard-percentage: 70%;
 	}
 }
 
-@media(max-width: 600px){
-	:root{
+@media(max-width: 800px){
+	.keyboard{
 		--keyboard-percentage: 80%;
+	}
+}
+
+@media(max-width: 600px){
+	.keyboard{
+		--keyboard-percentage: 90%;
 	}
 }
